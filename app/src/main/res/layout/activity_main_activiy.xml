@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_activiy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bjc.mobileplayer.activity.MainActiviy">
+    <!--标题栏-->
+    <include layout="@layout/layout_titlebar"/>
+    <!--内容-->
+    <FrameLayout
+        android:id="@+id/main_fg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <!--底部的选择按钮-->
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <RadioButton
+            android:id="@+id/local_video"
+            style="@style/rgstyle"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/rb_lc_video_selector"
+            android:text="本地视频" />
+
+        <RadioButton
+            android:id="@+id/local_radio"
+            style="@style/rgstyle"
+            android:drawableTop="@drawable/rb_lc_radio_selector"
+            android:text="本地音乐" />
+
+        <RadioButton
+            android:id="@+id/net_video"
+            style="@style/rgstyle"
+            android:drawableTop="@drawable/rb_net_video_selector"
+            android:text="网络视频" />
+
+        <RadioButton
+            android:id="@+id/net_audio"
+            style="@style/rgstyle"
+            android:drawableTop="@drawable/rb_net_radio_selector"
+            android:text="网络音频" />
+
+
+    </RadioGroup>
+
+</LinearLayout>
