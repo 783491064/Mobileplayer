@@ -30,6 +30,8 @@ public class MainActiviy extends FragmentActivity {
      */
     private ArrayList<BasePager> basePagers;
 
+
+
     /**
      * 选中的位置
      */
