@@ -27,6 +27,7 @@ public class MainActiviy extends FragmentActivity {
 
     /**
      * 页面的集合
+     * 页面的集合
      */
     private ArrayList<BasePager> basePagers;
 
